@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link href="dmt.css" rel="stylesheet"
+        type="text/css" media="all">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dmtool</title>
+  </head>
+  <script src="dmt.js"></script>
+  <body>
+    
+    <div id="page1" class="active">
+      <form id="one">
+        <div id="idt">デッキ名</div><input type="text" id="decks"><br>
+        <div id="idt">持ち主</div><input type="text" id="names"><br><br>
+        <input type="button" id='ent' onclick=entry() value="登録"><br><br>
+      </form>
+      SOUND:<input type="checkbox" id="sound" checked="1">
+      <form id="pls">
+        <div>プレイヤー1</div><input type="text" id="pl1"><br>
+        <div>プレイヤー2</div><input type="text" id="pl2"><br>
+        <input type="button" id = "gt" value="対戦開始" onclick=battle()>
+      </form>
+      <div id="sel">
+        <div id="tab1" onclick=chg(0) class="on">デッキリスト</div>
+        <div id="tab2" onclick=chg(1) class="off">抽選設定</div>
+        <div id="tab3" onclick=chg(2) class="off">BGM</div>
+          <div id = sc class="active">
+            <fieldset id="list" class="hide">
+            </fieldset>
+          </div>
+          <div id="conf" class="hide">
+            <fieldset id="stng">
+              <table border="2" id="tb2">
+                <tr>
+                  <td></td>
+                  <td>抽選1</td>
+                  <td>適用</td>
+                  <td>抽選2</td>
+                  <td>適用</td>
+                </tr>
+                <tr>
+                  <td>持ち主</td>
+                  <td><input type="text" id="sName1"></td>
+                  <td><input type="checkbox" id="sChk1"></td>
+                  <td><input type="text" id="sName2"></td>
+                  <td><input type="checkbox" id="sChk2"></td>
+                </tr>
+              </table>
+            </fieldset>
+
+          </div>
+          
+          <div id="music" class="hide">        
+            <div>　BGM(borrowing the works of ucchii0)</div>
+            <div>♪Logic_Magic</div>
+            　<audio controls src="music/Logic_Magic.wav" id = "m1"></audio><br>
+            <div>♪Struggle_Long</div>
+            　<audio controls src="music/Struggle_Long.mp3" id = "m2"></audio><br>
+            <div>♪Tales_of_the_Shining_Forest_-Short-</div>
+            　<audio controls src="music/Tales_of_the_Shining_Forest_-Short-.wav" id = "m3"></audio><br>
+            <div>♪君はもう_君じゃない</div>
+            　<audio controls src="music/君はもう_君じゃない_.wav" id = "m4"></audio><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page2" class="hide">
+      <div id="b1">
+        <img src="img/haikei.gif" id="back">
+        <img src="img/haikei2.gif" id="den" class="hide">
+      </div>
+      <div id="card" class="hide">
+        <div id="boxs" class="hide"><span id="box1" class="hide"></span><span id="box2" class="hide"></span></div>
+        <div id="user" class="hide"><span id="u1">user1</span><span id="u2">user2</span></div>
+        <div id="deck" class="hide"><span id="d1" class="hide">deck1</span><span id="d2" class="hide"></span></div>
+        <div id="cr" class="hide"><span id="c1" class="hide">bd1</span><span id="c2" class="hide">bd2</span></div>
+        <div id="vss" class="hide"><div id="vs" class="hide"> - VS - </div></div>
+      </div>
+      <div id="return" class="hide" onclick=reset()>return</div>
+    </div>
+  </body>
+</html>

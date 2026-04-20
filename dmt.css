@@ -1,0 +1,725 @@
+html{
+    background: linear-gradient(-250deg, #bad0df, #ffffff);
+    background-size: contain;
+    position: fixed;
+    width: 10000px;
+    height: 10000px;
+    overflow: hidden;
+}
+body{
+    width: 0;
+    position: fixed;
+    overflow: hidden;
+}
+#decks{
+    position: relative;
+    top: 5px;
+    width: clamp(100px,45vw,200px);
+}
+#names{
+    position: relative;
+    top: 5px;
+    width: clamp(100px,45vw,200px);
+}
+#page1.active{
+    opacity: 1;
+    position: fixed;
+    overflow: scroll;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+}
+#page1.hide{
+    opacity: 0;
+    position: absolute;
+    z-index: -20;
+    top:0px;
+}
+#page2.active{
+    position: fixed;
+    width:100vw;
+    height: 100vh;
+    opacity: 1;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+#page2.hide{
+    position: absolute;
+    z-index: -20;
+    opacity: 0;
+}
+#idt{
+    position: relative;
+    top: 5px;
+}
+#tb{
+    position: relative;
+    width: 95%;
+    border-collapse: collapse;
+    border:2px solid #2a78ab;
+    background: linear-gradient(-250deg, #42cdaf, #ffffff);
+}
+#tb2{
+    position: relative;
+    z-index: 20;
+    border:  2px solid #2a78ab;
+    background: linear-gradient(-250deg, #42cdaf, #ffffff);
+}
+#ls{
+    position: relative;
+    z-index: 20;
+    border:  2px solid #2a78ab;
+    background: linear-gradient(-250deg, #badfc1, #ffffff);
+}
+#list.hide{
+    opacity: 0;
+}
+#list.active{
+    position: relative;
+    opacity: 1;
+    z-index: 20;
+    border-color: rgb(153, 185, 185);
+    width: clamp(180px,100%,450px);
+    background: linear-gradient(-250deg, #c1badf, #ffffff);
+}
+#sc.hide{
+    opacity: 0;
+}
+#sc.active{
+    position:absolute;
+    z-index: 0;
+    z-index: 10;
+    top:80px;
+    left:5px;
+}
+
+@media screen and (max-width: 767px) {
+}
+#sName1{
+    width: 100px;
+}
+#sName2{
+    width: 100px;
+}
+#gt{
+    position: relative;
+    width: 120px;
+    height: 60px;
+    left: 20px;
+    top: 10px;
+    font-size: x-large;
+}
+#ent{
+    width: 50px;
+    height: 30px;
+}
+#pls{
+    position: fixed;
+    top:5px;
+    left:52vw;
+}
+#pl1{
+    position: relative;
+    
+    width: clamp(100px,45vw,200px);
+}
+#pl2{
+    position: relative;
+    width: clamp(100px,45vw,200px);
+}
+#card.hide{
+    position: fixed;
+    width: 100vw;
+    height: 25vh;
+    left:50vw;
+    top: 50vh;
+    transform: translateY(-50%),translateX(-50%);
+    top: 25vh;
+    opacity: 0;
+    z-index: 3;
+    text-align: center;
+    align-content: center;
+}
+#card.active{
+    position: fixed;
+    width: 100vw;
+    height: clamp(250px,32vh,360px);
+    left:0vw;
+    top: 50vh;
+    transform: translateY(-50%);
+    opacity: 1;
+    background-image: linear-gradient(to right, rgb(9, 9, 92), rgb(18, 18, 18), rgb(91, 4, 57));
+    z-index: 3;
+    text-align: center;
+    align-content: center;
+    animation:1s forwards dengeki 1s ease
+}
+#b1{
+    position: absolute;
+    opacity: 1;
+    z-index: -20;
+    align-content: center;
+}
+#back{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 120vh;
+}
+#den.hide{
+    position: absolute;
+    opacity: 0;
+    top:0vh;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+}
+#den.active{
+    position: fixed;
+    opacity: 1;
+    top:0vh;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    animation:1s forwards dengeki 1s ease
+}
+#vss.hide{
+    opacity: 0;
+}
+#vss.active{
+    position: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow:2px 2px #306156;
+    width: 100vw;
+    height:100vh;
+    text-align: center;
+    top:50%;
+    transform: translateY(-25%);
+    animation:forwards fadeIn 2s,2.1s forwards cText 1.5s ease infinite;
+}
+#vs.hide{
+    opacity: 0;
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow:2px 2px #306156;
+}
+#vs.active{
+    opacity: 1;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+    align-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow:2px 2px #306156;
+    transform: translateX(-50vw),translateY(-50%);
+}
+#user.hide{
+    opacity: 0;
+}
+#user.active{
+    font-size: clamp(20px,6vw,40px);
+    position: fixed;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: oblique;
+    color: #0e3636;
+    text-shadow:2px 2px #306156;
+    animation:forwards userShow2 2s ease,1s forwards userLoop2 1.5s ease infinite;
+    width: 100vw;
+    height: clamp(250px,32vh,360px);
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#u1{
+    background: none;
+    position: absolute;
+    text-align: right;
+    left: -4vw;
+    width: 40vw;
+    height: 30vh;
+    top:2%;
+}
+#u2{
+    background: none;
+    position: absolute;
+    text-align: left;
+    right: -4vw;
+    width: 40vw;
+    height: 30vh;
+    top:2%;
+}
+#deck.hide{
+    position: fixed;
+    opacity: 0;
+}
+#deck.active{
+    opacity: 1;
+    font-size: clamp(20px,5vw,30px);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: oblique;
+    position: fixed;
+    z-index: 0;
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+#boxs.hide{
+    position: fixed;
+    opacity: 0;
+}
+#boxs.active{
+    opacity: 1;
+    position: fixed;
+    z-index: 0;
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+#cr.hide{
+    position: fixed;
+    opacity: 0;
+}
+#cr.active{
+    opacity: 1;
+    position: fixed;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: clamp(15px,2.3vw,30px);
+    text-align: center;
+    line-height: 1;
+    width: 100vw;
+    height: 50vh;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+#c1.hide{
+    opacity: 0;
+}
+#c2.hide{
+    opacity: 0;
+}
+#c1.active{
+    opacity: 1;
+    position: absolute;
+    text-align: right;
+    width: 38vw;
+    height: 30vh;
+    left: 0vw;
+    top: 50%;
+    overflow-wrap: break-word;
+    animation:forwards userShow 2s ease,1s forwards userLoop 1.5s ease infinite;
+}
+#c2.active{
+    position: absolute;
+    opacity: 1;
+    text-align: left;
+    width: 38vw;
+    height: 30vh;
+    right: 1vw;
+    top: 50%;
+    overflow-wrap: break-word;
+    animation:forwards userShow 2s ease,1s forwards userLoop 1.5s ease infinite;
+}
+#d1.hide{
+    opacity: 0;
+}
+#d1.active{
+    position: absolute;
+    opacity: 1;
+    z-index: 40;
+    text-align: right;
+    left: 3vw;
+    width: 38vw;
+    height: 15vh;
+    top:27%;
+    overflow-wrap: break-word;
+    animation:forwards userShow 2s ease,1s forwards userLoop 1.5s ease infinite;
+}
+#d2.hide{
+    opacity: 0;
+}
+#d2.active{
+    position: absolute;
+    opacity: 1;
+    z-index: 40;
+    text-align: left;
+    right: 3vw;
+    width: 38vw;
+    height: 15vh;
+    top:27%;
+    overflow-wrap: break-word;
+    animation:forwards userShow 2s ease,1s forwards userLoop 1.5s ease infinite;
+}
+#box1.hide{
+    opacity: 0;
+}
+#box1.active{
+    opacity: 1;
+    font-size: clamp(23px,4vw,90px);
+    position: fixed;
+    left: 1vw;
+    z-index: -20;
+    width: 40vw;
+    height: clamp(120px,15vh,130px);
+    top:50%;
+    transform:translateY(-50%);
+    border: 2px dotted transparent;
+    background-image:
+        linear-gradient(to right,rgb(90, 90, 90), rgb(29, 31, 30)),
+
+        conic-gradient(
+            from var(--angle),
+            #ffffff 0turn 0.05turn,
+            #4534ff 0.1turn 0.45turn,
+            #ffffff 0.5turn 0.55turn,
+            #ff2fc4 0.6turn 0.95turn,
+            #ffffff 1turn
+        )
+    ;
+    background-clip:
+        padding-box, /* Clip white semi-transparent to the padding-box */
+        border-box /* Clip colored boxes to the border-box (default) */
+    ;
+    background-origin: border-box;
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0e3636;
+    text-shadow:2px 2px #306156;
+    animation:forwards userShow 2s ease, 1s forwards userLoop 1.5s linear infinite,forwards rotate 3s linear infinite
+
+}
+#box2.hide{
+    opacity: 0;
+}
+#box2.active{
+    opacity: 1;
+    font-size: clamp(23px,4vw,90px);
+    position: fixed;
+    right: 1vw;
+    width: 40vw;
+    height: clamp(120px,15vh,130px);
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px dotted transparent;
+    background-image:
+        linear-gradient(to right, rgb(29, 31, 30), rgb(90, 90, 90)),
+
+        conic-gradient(
+            from var(--angle),
+            #ffffff 0turn 0.05turn,
+            #4534ff 0.1turn 0.45turn,
+            #ffffff 0.5turn 0.55turn,
+            #ff2fc4 0.6turn 0.95turn,
+            #ffffff 1turn
+        )
+    ;
+    background-clip:
+        padding-box, /* Clip white semi-transparent to the padding-box */
+        border-box /* Clip colored boxes to the border-box (default) */
+    ;
+    background-origin: border-box;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0e3636;
+    text-shadow:2px 2px #306156;
+    animation:forwards userShow 2s ease, 1s forwards userLoop 1.5s linear infinite,forwards rotate 3s linear infinite
+
+}
+#music.hide{
+    opacity: 0;
+}
+#music.active{
+    background-color: #bbbbbb;
+    border: 2px solid #2a78ab;
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    left:10px;
+    z-index: 20;
+    overflow: scroll;
+}
+#sel{
+    background-color: #444444;
+    position: fixed;
+    width: 85vw;
+    height: 50vh;
+    top: 210px;
+    left: 5px;
+    border: 2px solid #2a78ab;
+    overflow: scroll;
+}
+#tab1.on{
+    background-color: #daffea;
+    position: fixed;
+    text-align: center;
+    width: clamp(30px,28vw,100px);
+    height: 50px;
+    top: 210px;
+    left: 5px;
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#tab1.off{
+    background-color: #4cd688;
+    position: fixed;
+    text-align: center;
+    width: clamp(30px,28vw,100px);
+    height: 50px;
+    top: 210px;
+    left: 5px;
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#tab2.on{
+    background-color: #daffea;
+    position: fixed;
+    text-align: center;
+    width: clamp(30px,28vw,100px);
+    height: 50px;
+    top: 210px;
+    left: calc(clamp(30px,28vw,100px) + 5px);
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#tab2.off{
+    background-color: #4cd688;
+    position: fixed;
+    text-align: center;
+    width: clamp(30px,28vw,100px);
+    height: 50px;
+    top: 210px;
+    left: 105px;
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#tab3.on{
+    background-color: #daffea;
+    position: fixed;
+    text-align: center;
+    width: clamp(30px,28vw,100px);
+    height: 50px;
+    top: 210px;
+    left: calc(clamp(60px,56vw,200px) + 5px);
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#tab3.off{
+    background-color: #4cd688;
+    position: fixed;
+    text-align: center;
+    width: clamp(30px,28vw,100px);
+    height: 50px;
+    top: 210px;
+    left: calc(clamp(60px,56vw,200px) + 5px);
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#conf.hide{
+    opacity: 0;
+}
+#conf.active{
+    position:absolute;
+    opacity: 1;
+    z-index: 20;
+    top:80px;
+    left:5px;
+    width: 95%;
+    overflow-x: scroll;
+}
+#stng{
+    background: linear-gradient(-250deg, #4fb8b8, #ffffff);
+    border: none;
+}
+#return.hide{
+    opacity: 0;
+}
+#return.active{
+    position: fixed;
+    top:10px;
+    right:10px;
+    width: 100px;
+    height: 50px;
+    opacity: 0;
+    z-index: 999;
+    align-content: center;
+    background: linear-gradient(-250deg, #838383, #ffffff);
+    animation:1s forwards button 1.5s ease
+}
+
+@keyframes button{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0%{
+        color: #00a060;
+        font-size: clamp(140px,25vw,260px);
+        text-shadow:2px 2px #2c9981;
+        opacity: 0;
+      }
+    49%{
+        font-size: clamp(65px,14vw,110px);
+        color: #303030;
+        text-shadow:2px 2px #2c9981;
+        opacity: 1;
+    }
+    50%{
+        font-size: clamp(120px,17vw,170px);
+        color: #000000;
+        text-shadow:2px 2px #2c9981;
+        opacity: 1;
+    }
+    70%{
+        font-size: clamp(120px,17vw,170px);
+        color: #000000;
+        text-shadow:2px 2px #2c9981;
+        opacity: 1;
+        top:50%;
+    }
+    100%{
+        font-size: clamp(40px,12vw,60px);
+        color: #f51ca6;
+        text-shadow:2px 2px #2c9981;
+        opacity: 1;
+        top: 10%;
+
+      }
+    }
+@keyframes cText{
+    0%{
+        opacity: 1;
+    }
+    1%{
+        color: #f51ca6;
+        opacity: 1;
+    }
+    30%{
+        color: #f6c4f8;
+        opacity: 1;
+    }
+    80%{
+        color: #f51ca6;
+        opacity: 1;
+    }
+}
+@keyframes dengeki{
+    1%{
+        filter: brightness(80%) invert(100%);
+        opacity: 1;
+    }
+    100%{
+        filter: brightness(80%) invert(0%);
+        opacity: 1;
+    }
+}
+@keyframes userShow{
+    0%{
+        opacity: 0;
+        background-color: none;
+      }
+    50%{
+        color: #000000;
+        opacity: 0;
+        background-color: none;
+    }
+    51%{
+        color: #ffffff;
+        opacity: 1;
+    }
+    100%{
+        color: #21f3f3;
+        opacity: 1;
+      }
+}
+@keyframes userLoop{
+    0%{
+         color: #21f3f3;
+        opacity: 1;
+    }
+    30%{
+        color: #e2ffff;
+        opacity: 1;
+    }
+    80%{
+        color: #21f3f3;
+        opacity: 1;
+    }
+    100%{
+        color: #21f3f3;
+        opacity: 1;
+    }
+}
+@keyframes userShow2{
+    0%{
+        opacity: 0;
+        background-color: none;
+      }
+    50%{
+        color: #000000;
+        opacity: 0;
+        background-color: none;
+    }
+    51%{
+        color: #ffffff;
+        opacity: 1;
+    }
+    100%{
+        color: #21f372;
+        opacity: 1;
+      }
+}
+@keyframes userLoop2{
+    0%{
+         color: #21f372;
+        opacity: 1;
+    }
+    30%{
+        color: #e2ffff;
+        opacity: 1;
+    }
+    80%{
+        color: #21f372;
+        opacity: 1;
+    }
+    100%{
+        color: #21f372;
+        opacity: 1;
+    }
+}
+@keyframes frmLoop{
+    0%{
+        
+    }
+    100%{
+        
+    }
+
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
