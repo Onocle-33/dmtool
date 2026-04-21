@@ -117,7 +117,7 @@ body{
 #pls{
     position: fixed;
     top:5px;
-    left:52vw;
+    left:calc(clamp(100px,45vw,200px)+5px);
 }
 #pl1{
     position: relative;
