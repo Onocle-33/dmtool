@@ -6,8 +6,11 @@ const rankData=[];
 const snd = new Audio("sound/剣で斬る6.mp3");
 const snd2 = new Audio("sound/重力魔法1.mp3");
 const snd3 = new Audio("sound/魔法陣を展開.mp3");
-
+const slider_volume = document.getElementById("volume");
 function soundLoad(){
+    snd.loop=false
+    snd2.loop=false
+    snd3.loop=false
     snd.muted=true
     snd2.muted=true
     snd3.muted=true
