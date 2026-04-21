@@ -440,6 +440,7 @@ body{
 }
 #music.hide{
     opacity: 0;
+    z-index: -20;
 }
 #music.active{
     background-color: #bbbbbb;
@@ -529,6 +530,7 @@ body{
 }
 #conf.hide{
     opacity: 0;
+    z-index: -20;
 }
 #conf.active{
     position:absolute;
