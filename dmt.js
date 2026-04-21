@@ -6,6 +6,17 @@ const rankData=[];
 const snd = new Audio("sound/剣で斬る6.mp3");
 const snd2 = new Audio("sound/重力魔法1.mp3");
 const snd3 = new Audio("sound/魔法陣を展開.mp3");
+
+function soundLoad(){
+    snd.muted=false
+    snd2.muted=false
+    snd3.muted=false
+    snd.play()
+    snd2.play()
+    snd3.play()
+    return
+}
+
 function entry(){
     let decks1=document.getElementById("decks").value
     let names1=document.getElementById("names").value
@@ -252,6 +263,9 @@ function battle(){
     snd2.loop=false
     snd3.loop=false
     if(document.getElementById("sound").checked){
+        snd.muted=true
+        snd2.muted=true
+        snd3.muted=true
         snd.play();
         snd2.play();
         snd3.play();
