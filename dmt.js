@@ -8,9 +8,9 @@ const snd2 = new Audio("sound/重力魔法1.mp3");
 const snd3 = new Audio("sound/魔法陣を展開.mp3");
 
 function soundLoad(){
-    snd.muted=false
-    snd2.muted=false
-    snd3.muted=false
+    snd.muted=true
+    snd2.muted=true
+    snd3.muted=true
     snd.play()
     snd2.play()
     snd3.play()
@@ -85,6 +85,7 @@ function inports(){
 
 
 function list() {
+    soundLoad();
     let res = "";
     if (ent.length >= 1) {
         res = res + "<table border='2' id='tb'>";
@@ -262,10 +263,16 @@ function battle(){
     snd.loop=false
     snd2.loop=false
     snd3.loop=false
+    snd.pause();
+    snd2.pause();
+    snd3.pause();
+    snd.currentTime=0;
+    snd2.currentTime=0;
+    snd3.currentTime=0;
     if(document.getElementById("sound").checked){
-        snd.muted=true
-        snd2.muted=true
-        snd3.muted=true
+        snd.muted=false
+        snd2.muted=false
+        snd3.muted=false
         snd.play();
         snd2.play();
         snd3.play();
