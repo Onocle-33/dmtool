@@ -268,7 +268,28 @@ function se(){
         snd3.play();
     }
 }
-
+function onePick(){
+    
+    if(ent.length<1){
+        return
+    }
+    chk()
+    let res1=0
+    let res2=1
+    const table1=[];
+    for(let i=0;i<ent.length;i++){
+        //console.log(ent[i][2]);
+        if(ent[i][2]=="t"){
+            table1.push([ent[i][0].substr(ent[i][0].indexOf('$') + 1),ent[i][1]]);
+        }
+    }
+    if(table1.length<2){
+        return
+    }
+    res1=Math.floor(Math.random() * table1.length);
+    console.log("res1:" + res1);
+    alert("デッキ:" + table1[res1][0] + "\n構築:" + table1[res1][1])
+}
 function reset(){
     document.getElementById("page1").className="active"
     document.getElementById("page2").className="hide"
@@ -292,26 +313,21 @@ function reset(){
 
 function inports(){
     //console.log(document.getElementById("pass").value)
-    try{
-        let ps=document.getElementById("pass").value;
-        const res1=ps.split("$");
-        for(let i=0;i<res1.length;i++){
-            let tb=res1[i].split(",")
-            if(tb[0]==false||tb[1]==false||tb.length<=1){
-                alert("インポートに失敗しました。\nテキストが正常でない可能性があります。");
-                return;
-            }
-            if(ent.length>=1){
-                ent.push(["$"+tb[0],tb[1],"t"])
-            }else{
-                ent.push([tb[0],tb[1],"t"]);
-            }
+    let ps=document.getElementById("pass").value;
+    const res1=ps.split("$");
+    for(let i=0;i<res1.length;i++){
+        let tb=res1[i].split(",")
+        if(tb[0]==false||tb[1]==false||tb.length<=1){
+            alert("インポートに失敗しました。\nテキストが正常でない可能性があります。");
+            return;
         }
-
-    }catch(e){
-        
+        if(ent.length>=1){
+            ent.push(["$"+tb[0],tb[1],"t"])
+        }else{
+            ent.push([tb[0],tb[1],"t"]);
+        }
     }
-
+    alert("インポートに成功しました。");
     list()
    return;
 }
