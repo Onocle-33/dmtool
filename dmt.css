@@ -446,11 +446,10 @@ body{
     background-color: #bbbbbb;
     border: 2px solid #2a78ab;
     position: absolute;
-    width: 300px;
+    width: clamp(350px,60vw,600px);
     top: 50px;
     left:10px;
     z-index: 20;
-    overflow: scroll;
 }
 #sel{
     background-color: #444444;
@@ -466,7 +465,8 @@ body{
     background-color: #daffea;
     position: fixed;
     text-align: center;
-    width: clamp(30px,28vw,100px);
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
     height: 50px;
     top: 210px;
     left: 5px;
@@ -477,7 +477,8 @@ body{
     background-color: #4cd688;
     position: fixed;
     text-align: center;
-    width: clamp(30px,28vw,100px);
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
     height: 50px;
     top: 210px;
     left: 5px;
@@ -488,10 +489,11 @@ body{
     background-color: #daffea;
     position: fixed;
     text-align: center;
-    width: clamp(30px,28vw,100px);
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
     height: 50px;
     top: 210px;
-    left: calc(clamp(30px,28vw,100px) + 5px);
+    left: calc(clamp(30px,20vw,100px) + 5px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -499,10 +501,11 @@ body{
     background-color: #4cd688;
     position: fixed;
     text-align: center;
-    width: clamp(30px,28vw,100px);
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
     height: 50px;
     top: 210px;
-    left: 105px;
+    left: calc(clamp(60px,20vw,100px) + 5px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -510,10 +513,11 @@ body{
     background-color: #daffea;
     position: fixed;
     text-align: center;
-    width: clamp(30px,28vw,100px);
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
     height: 50px;
     top: 210px;
-    left: calc(clamp(60px,56vw,200px) + 5px);
+    left: calc(clamp(60px,40vw,200px) + 5px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -521,10 +525,35 @@ body{
     background-color: #4cd688;
     position: fixed;
     text-align: center;
-    width: clamp(30px,28vw,100px);
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
     height: 50px;
     top: 210px;
-    left: calc(clamp(60px,56vw,200px) + 5px);
+    left: calc(clamp(60px,40vw,200px) + 5px);
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#tab4.on{
+    background-color: #daffea;
+    position: fixed;
+    text-align: center;
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
+    height: 50px;
+    top: 210px;
+    left: calc(clamp(90px,60vw,300px) + 5px);
+    z-index: 30;
+    border: 2px solid #2a78ab;
+}
+#tab4.off{
+    background-color: #4cd688;
+    position: fixed;
+    text-align: center;
+    font-size: clamp(15px,4vw,20px);
+    width: clamp(30px,20vw,100px);
+    height: 50px;
+    top: 210px;
+    left: calc(clamp(90px,60vw,300px) + 5px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -545,6 +574,41 @@ body{
     background: linear-gradient(-250deg, #4fb8b8, #ffffff);
     border: none;
 }
+#data.hide{
+    opacity: 0;
+    z-index: -20;
+}
+#data.active{
+    opacity: 1;
+    background-color: #bbbbbb;
+    border: 2px solid #2a78ab;
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    left:10px;
+    height: 300px;
+    z-index: 20;
+}
+#pass{
+    position: relative;
+    overflow-wrap: break-word;
+    opacity: 1;
+    z-index: 20;
+    top: 30px;
+    left: 10px;
+    width: 250px;
+    height: 80px;
+    overflow: scroll;
+}
+#inport{
+    position: relative;
+    top: 30px;
+}
+#export{
+    position: relative;
+    top: 30px;
+}
+
 #return.hide{
     opacity: 0;
 }
