@@ -600,13 +600,21 @@ body{
     height: 80px;
     overflow: scroll;
 }
+#copy{
+    position: relative;
+    top: 20px;
+}
+#crs{
+    position: relative;
+    top: 20px;
+}
 #inport{
     position: relative;
-    top: 30px;
+    top: 0px;
 }
 #export{
     position: relative;
-    top: 30px;
+    top: 0px;
 }
 
 #return.hide{
