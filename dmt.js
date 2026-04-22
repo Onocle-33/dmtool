@@ -206,7 +206,7 @@ function chg(r){
     return
 }
 function volume(){
-    for(let i=1;i<4;i++){
+    for(let i=1;i<=4;i++){
         document.getElementById("msc" + i).volume=document.getElementById("vol").value
     }
 }
