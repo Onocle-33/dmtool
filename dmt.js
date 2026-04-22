@@ -276,6 +276,12 @@ function battle(){
     document.getElementById("box1").className="active"
     document.getElementById("box2").className="active"
     document.getElementById("return").className="active"
+    se()
+    return
+}
+
+function se(){
+    
     snd.loop=false
     snd2.loop=false
     snd3.loop=false
@@ -293,7 +299,6 @@ function battle(){
         snd2.play();
         snd3.play();
     }
-    return
 }
 
 function reset(){
