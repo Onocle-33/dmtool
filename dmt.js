@@ -192,7 +192,7 @@ function chg(r){
     pages.push(["tab1","sc"])
     pages.push(["tab2","conf"])
     pages.push(["tab3","music"])
-
+    document.getElementById("sel").scrollTo(0,0)
     for(i=0;i<pages.length;i++){
         let res1 = "off"
         let res2 = "hide"
