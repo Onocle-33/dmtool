@@ -27,6 +27,7 @@
         <div id="tab1" onclick=chg(0) class="on">デッキリスト</div>
         <div id="tab2" onclick=chg(1) class="off">抽選設定</div>
         <div id="tab3" onclick=chg(2) class="off">BGM</div>
+        <div id="tab4" onclick=chg(3) class="off">データ管理</div>
           <div id = sc class="active">
             <fieldset id="list" class="hide">
             </fieldset>
@@ -64,6 +65,13 @@
             　<audio controls preload="auto" src="music/Tales_of_the_Shining_Forest_-Short-.wav" id = "msc3" loop></audio><br>
             <div>♪君はもう_君じゃない</div>
             　<audio controls src="music/君はもう_君じゃない_.wav" id = "msc4" loop></audio><br>
+          </div>
+          <div id="data" class="hide">
+            <textarea id="pass"></textarea><br><br>
+            <input type="button" id="inport" value="コピー" onclick="copy()">
+            <input type="button" id="inport" value="削除" onclick="crs()"><br><br>
+            <input type="button" id="inport" value="インポート" onclick="inports()">
+            <input type="button" id="export" value="エクスポート" onclick="exp()">
           </div>
         </div>
       </div>
