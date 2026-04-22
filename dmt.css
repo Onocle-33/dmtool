@@ -9,7 +9,7 @@ html{
 body{
     width: 0;
     position: fixed;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 #decks{
     position: relative;
@@ -130,7 +130,7 @@ body{
     height: 30px;
 }
 #pls{
-    position: fixed;
+    position: absolute;
     top:5px;
     left:clamp(110px,52vw,220px);
 }
@@ -142,6 +142,11 @@ body{
 #pl2{
     position: relative;
     width: clamp(100px,45vw,200px);
+}
+#space{
+    position: absolute;
+    top: 50vh;
+    height: 10px;
 }
 #card.hide{
     position: fixed;
@@ -472,7 +477,7 @@ body{
     background-color: #444444;
     position: relative;
     width: 85vw;
-    height: 50vh;
+    height: clamp(500px,50vh,800px);
     top: 20px;
     left: 0;
     border: 2px solid #2a78ab;
