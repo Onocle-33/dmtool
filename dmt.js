@@ -292,18 +292,26 @@ function reset(){
 
 function inports(){
     //console.log(document.getElementById("pass").value)
-    let ps=document.getElementById("pass").value;
-    const res1=ps.split("$");
-    for(let i=0;i<res1.length;i++){
-        
-        let tb=res1[i].split(",")
-
-        if(ent.length>=1){
-            ent.push(["$"+tb[0],tb[1],"t"])
-        }else{
-            ent.push([tb[0],tb[1],"t"]);
+    try{
+        let ps=document.getElementById("pass").value;
+        const res1=ps.split("$");
+        for(let i=0;i<res1.length;i++){
+            let tb=res1[i].split(",")
+            if(tb[0]==false||tb[1]==false||tb.length<=1){
+                alert("インポートに失敗しました。\nテキストが正常でない可能性があります。");
+                return;
+            }
+            if(ent.length>=1){
+                ent.push(["$"+tb[0],tb[1],"t"])
+            }else{
+                ent.push([tb[0],tb[1],"t"]);
+            }
         }
+
+    }catch(e){
+        
     }
+
     list()
    return;
 }
@@ -320,7 +328,7 @@ function exp(){
 function copy(){
     document.getElementById("pass").select();                              // コピーしたい要素を選択状態にする
 	document.execCommand("Copy");                     // 選択しているテキストをクリップボードにコピーする
-	alert("コピーしました！");  
+	alert("コピーしました");  
 }
 function crs(){
     document.getElementById("pass").value="";    
