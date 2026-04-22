@@ -6,6 +6,9 @@ const rankData=[];
 const snd = new Audio("sound/剣で斬る6.mp3");
 const snd2 = new Audio("sound/重力魔法1.mp3");
 const snd3 = new Audio("sound/魔法陣を展開.mp3");
+snd.preload="auto"
+snd2.preload="auto"
+snd3.preload="auto"
 function soundLoad(){
     snd.loop=false
     snd2.loop=false
@@ -87,7 +90,7 @@ function inports(){
 
 
 function list() {
-    soundLoad();
+    //soundLoad();
     let res = "";
     if (ent.length >= 1) {
         res = res + "<table border='2' id='tb'>";
@@ -202,7 +205,16 @@ function chg(r){
     }
     return
 }
-
+function volume(){
+    for(let i=1;i<4;i++){
+        document.getElementById("msc" + i).volume=document.getElementById("vol").value
+    }
+}
+function volume2(){
+    snd.volume=document.getElementById("vol2").value
+    snd2.volume=document.getElementById("vol2").value
+    snd3.volume=document.getElementById("vol2").value
+}
 function battle(){
     if(ent.length<1){
         return
