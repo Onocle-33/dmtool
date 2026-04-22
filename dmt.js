@@ -128,6 +128,13 @@ function up(id){
         ent[id][i]=ent[id-1][i];
         ent[id-1][i]=wk;
     }
+    if(ent[0][0].indexOf("$")>=0){
+        let cut = ent[0][0].substr(ent[0][0].indexOf('$') + 1);
+        ent[0][0]=cut
+    }
+    if(ent[id][0].substr(0,1)!="$"){
+        ent[id][0]="$" + ent[id][0]
+    }
     list();
     return;
 }
@@ -140,6 +147,13 @@ function down(id){
         wk=ent[id][i];
         ent[id][i]=ent[id+1][i];
         ent[id+1][i]=wk;
+    }
+    if(ent[0][0].indexOf("$")>=0){
+        let cut = ent[0][0].substr(ent[0][0].indexOf('$') + 1);
+        ent[0][0]=cut
+    }
+    if(ent[id+1][0].substr(0,1)!="$"){
+        ent[id+1][0]="$" + ent[id+1][0]
     }
     list();
     return;
