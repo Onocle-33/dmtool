@@ -455,107 +455,107 @@ body{
 }
 #sel{
     background-color: #444444;
-    position: fixed;
+    position: relative;
     width: 85vw;
     height: 50vh;
-    top: 210px;
-    left: 5px;
+    top: 0px;
+    left: 0;
     border: 2px solid #2a78ab;
     overflow: scroll;
 }
 #tab1.on{
     background-color: #daffea;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: 5px;
+    top: 0px;
+    left: 0px;
     z-index: 30;
     border: 2px solid #2a78ab;
 }
 #tab1.off{
     background-color: #4cd688;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: 5px;
+    top: 0px;
+    left: 0px;
     z-index: 30;
     border: 2px solid #2a78ab;
 }
 #tab2.on{
     background-color: #daffea;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: calc(clamp(30px,20vw,100px) + 5px);
+    top: 0px;
+    left: calc(clamp(30px,20vw,100px));
     z-index: 30;
     border: 2px solid #2a78ab;
 }
 #tab2.off{
     background-color: #4cd688;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: calc(clamp(60px,20vw,100px) + 5px);
+    top: 0px;
+    left: calc(clamp(60px,20vw,100px));
     z-index: 30;
     border: 2px solid #2a78ab;
 }
 #tab3.on{
     background-color: #daffea;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: calc(clamp(60px,40vw,200px) + 5px);
+    top: 0px;
+    left: calc(clamp(60px,40vw,200px));
     z-index: 30;
     border: 2px solid #2a78ab;
 }
 #tab3.off{
     background-color: #4cd688;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: calc(clamp(60px,40vw,200px) + 5px);
+    top: 0px;
+    left: calc(clamp(60px,40vw,200px));
     z-index: 30;
     border: 2px solid #2a78ab;
 }
 #tab4.on{
     background-color: #daffea;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: calc(clamp(90px,60vw,300px) + 5px);
+    top: 0px;
+    left: calc(clamp(90px,60vw,300px));
     z-index: 30;
     border: 2px solid #2a78ab;
 }
 #tab4.off{
     background-color: #4cd688;
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 210px;
-    left: calc(clamp(90px,60vw,300px) + 5px);
+    top: 0px;
+    left: calc(clamp(90px,60vw,300px));
     z-index: 30;
     border: 2px solid #2a78ab;
 }
