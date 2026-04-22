@@ -21,6 +21,9 @@ body{
     top: 5px;
     width: clamp(100px,45vw,200px);
 }
+#stng{
+    position: relative;
+}
 #page1.active{
     opacity: 1;
     position: fixed;
@@ -55,7 +58,6 @@ body{
 }
 #tb{
     position: relative;
-    width: 95%;
     border-collapse: collapse;
     border:2px solid #2a78ab;
     background: linear-gradient(-250deg, #42cdaf, #ffffff);
@@ -80,7 +82,6 @@ body{
     opacity: 1;
     z-index: 20;
     border-color: rgb(153, 185, 185);
-    width: clamp(180px,100%,450px);
     background: linear-gradient(-250deg, #c1badf, #ffffff);
 }
 #sc.hide{
@@ -88,9 +89,9 @@ body{
 }
 #sc.active{
     position:absolute;
-    z-index: 0;
     z-index: 10;
     top:80px;
+    width: clamp(500px,50vw,800px);
     left:5px;
 }
 
@@ -108,6 +109,7 @@ body{
     height: 60px;
     left: 20px;
     top: 10px;
+    text-align: center;
     font-size: x-large;
 }
 #ent{
