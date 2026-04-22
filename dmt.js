@@ -55,39 +55,6 @@ function dld(){
 }
 
 
-function inports(){
-    const input = document.querySelector(".input");
-    let files = input.files;
-    console.log(files);
-    if(files.length!=1){
-        return;
-    }
-    const blob = new Blob(files, {type: 'dat'});
-    const reader = new FileReader();
-    reader.readAsText(blob)
-    reader.onload = function(){
-    let file_type = files[0].type
-    console.log(file_type)
-    if(file_type!=""){
-        return;
-    }
-    let res = (reader.result.split("$"));
-    ent.splice(0);
-    for(let i=0;i<res.length;i++){
-        let res2= res[i].split(",");
-        if(i>=1){
-        res2[0]="$"+res2[0];
-        }
-        //console.log(res2)
-        ent.push(res2);
-    }
-
-    //console.log(ent);
-    list();
-};
-    
-    return;
-}
 
 
 
@@ -194,6 +161,7 @@ function chg(r){
     pages.push(["tab1","sc"])
     pages.push(["tab2","conf"])
     pages.push(["tab3","music"])
+    pages.push(["tab4","data"])
     document.getElementById("sel").scrollTo(0,0)
     for(i=0;i<pages.length;i++){
         let res1 = "off"
@@ -322,6 +290,41 @@ function reset(){
 
 }
 
+function inports(){
+    //console.log(document.getElementById("pass").value)
+    let ps=document.getElementById("pass").value;
+    const res1=ps.split("$");
+    for(let i=0;i<res1.length;i++){
+        
+        let tb=res1[i].split(",")
+
+        if(ent.length>=1){
+            ent.push(["$"+tb[0],tb[1],"t"])
+        }else{
+            ent.push([tb[0],tb[1],"t"]);
+        }
+    }
+    list()
+   return;
+}
+function exp(){
+    let res=""
+    chk()
+    for(let i=0;i<ent.length;i++){
+        res=res+ent[i][0]+",";
+        res=res+ent[i][1];
+    }
+    //console.log(res);
+    document.getElementById("pass").value=res;
+}
+function copy(){
+    document.getElementById("pass").select();                              // コピーしたい要素を選択状態にする
+	document.execCommand("Copy");                     // 選択しているテキストをクリップボードにコピーする
+	alert("コピーしました！");  
+}
+function crs(){
+    document.getElementById("pass").value="";    
+}
 function loading(){
     let dot;
     dot="";
@@ -334,8 +337,3 @@ function loading(){
     }
     document.getElementById("ld2").innerText="Now Loading" + dot
 }
-window.onload = function () {
-  const ld = document.getElementById("ld");
-  clearInterval
-  ld.className=("loaded");
-};
