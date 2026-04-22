@@ -9,6 +9,8 @@ const snd3 = new Audio("sound/魔法陣を展開.mp3");
 snd.preload="auto"
 snd2.preload="auto"
 snd3.preload="auto"
+var count = 0;
+//setInterval(loading, 1000);
 function soundLoad(){
     snd.loop=false
     snd2.loop=false
@@ -314,3 +316,21 @@ function reset(){
     document.getElementById("return").className="hide"
 
 }
+
+function loading(){
+    let dot;
+    dot="";
+    for(let i=0;i<count;i++){
+        dot=dot+"."
+    }
+    count=count+1;
+    if(count>3){
+        count=0;
+    }
+    document.getElementById("ld2").innerText="Now Loading" + dot
+}
+window.onload = function () {
+  const ld = document.getElementById("ld");
+  clearInterval
+  ld.className=("loaded");
+};
