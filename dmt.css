@@ -106,11 +106,24 @@ body{
 #gt{
     position: relative;
     width: 120px;
-    height: 60px;
-    left: 20px;
+    height: 50px;
+    left: 30px;
     top: 10px;
     text-align: center;
-    font-size: x-large;
+    font-size: 20px;
+}
+#op{
+    position: relative;
+    width: 120px;
+    height: 25px;
+    left: 30px;
+    top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+#vl{
+    position: relative;
+    top: 10px;
 }
 #ent{
     width: 50px;
@@ -460,13 +473,14 @@ body{
     position: relative;
     width: 85vw;
     height: 50vh;
-    top: 0px;
+    top: 20px;
     left: 0;
     border: 2px solid #2a78ab;
     overflow: scroll;
 }
 #tabs{
     position: relative;
+    top: 20px;
 }
 #tab1.on{
     background-color: #daffea;
