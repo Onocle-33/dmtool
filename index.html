@@ -16,7 +16,8 @@
         <div id="idt">持ち主</div><input type="text" id="names"><br><br>
         <input type="button" id='ent' onclick=entry() value="登録"><br><br>
       </form>
-      SOUND:<input type="checkbox" id="sound" checked="1">
+      SOUND:<input type="checkbox" id="sound" checked="1"><br>
+      Volume:<input type="range" min="0" max="1" step="0.1" onchange="volume2()" id="vol2" value="0.2">
       <form id="pls">
         <div>プレイヤー1</div><input type="text" id="pl1"><br>
         <div>プレイヤー2</div><input type="text" id="pl2"><br>
@@ -54,14 +55,15 @@
           
           <div id="music" class="hide">
             <div>　BGM(borrowing the works of ucchii0)</div>
+            Volume:<input type="range" min="0" max="1" step="0.1" onchange="volume()" id="vol" value="0.2">
             <div>♪Logic_Magic</div>
-            　<audio controls src="music/Logic_Magic.wav" id = "m1"></audio><br>
+            　<audio controls preload="auto" src="music/Logic_Magic.wav" id = "msc1" loop></audio><br>
             <div>♪Struggle_Long</div>
-            　<audio controls src="music/Struggle_Long.mp3" id = "m2"></audio><br>
+            　<audio controls preload="auto" src="music/Struggle_Long.mp3" id = "msc2" loop></audio><br>
             <div>♪Tales_of_the_Shining_Forest_-Short-</div>
-            　<audio controls src="music/Tales_of_the_Shining_Forest_-Short-.wav" id = "m3"></audio><br>
+            　<audio controls preload="auto" src="music/Tales_of_the_Shining_Forest_-Short-.wav" id = "msc3" loop></audio><br>
             <div>♪君はもう_君じゃない</div>
-            　<audio controls src="music/君はもう_君じゃない_.wav" id = "m4"></audio><br>
+            　<audio controls src="music/君はもう_君じゃない_.wav" id = "msc4" loop></audio><br>
           </div>
         </div>
       </div>
