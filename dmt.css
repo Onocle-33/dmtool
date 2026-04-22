@@ -463,6 +463,9 @@ body{
     border: 2px solid #2a78ab;
     overflow: scroll;
 }
+#tabs{
+    position: relative;
+}
 #tab1.on{
     background-color: #daffea;
     position: absolute;
@@ -470,8 +473,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: 0px;
+    top: 1px;
+    left: 1px;
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -482,8 +485,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: 0px;
+    top: 1px;
+    left: 1px;
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -494,8 +497,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: calc(clamp(30px,20vw,100px));
+    top: 1px;
+    left: calc(clamp(30px,20vw,100px) + 1px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -506,8 +509,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: calc(clamp(60px,20vw,100px));
+    top: 1px;
+    left: calc(clamp(60px,20vw,100px) + 1px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -518,8 +521,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: calc(clamp(60px,40vw,200px));
+    top: 1px;
+    left: calc(clamp(60px,40vw,200px) + 1px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -530,8 +533,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: calc(clamp(60px,40vw,200px));
+    top: 1px;
+    left: calc(clamp(60px,40vw,200px) + 1px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -542,8 +545,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: calc(clamp(90px,60vw,300px));
+    top: 1px;
+    left: calc(clamp(90px,60vw,300px) + 1px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
@@ -554,8 +557,8 @@ body{
     font-size: clamp(15px,4vw,20px);
     width: clamp(30px,20vw,100px);
     height: 50px;
-    top: 0px;
-    left: calc(clamp(90px,60vw,300px));
+    top: 1px;
+    left: calc(clamp(90px,60vw,300px) + 1px);
     z-index: 30;
     border: 2px solid #2a78ab;
 }
