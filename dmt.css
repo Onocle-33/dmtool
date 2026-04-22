@@ -88,7 +88,7 @@ body{
     opacity: 0;
 }
 #sc.active{
-    position:absolute;
+    position:relative;
     z-index: 10;
     top:80px;
     width: clamp(500px,50vw,800px);
@@ -144,8 +144,8 @@ body{
     width: clamp(100px,45vw,200px);
 }
 #space{
-    position: absolute;
-    top: 50vh;
+    position: relative;
+    top: 40vh;
     height: 10px;
 }
 #card.hide{
@@ -462,6 +462,7 @@ body{
 }
 #music.hide{
     opacity: 0;
+    position: absolute;
     z-index: -20;
 }
 #music.active{
@@ -584,6 +585,7 @@ body{
     border: 2px solid #2a78ab;
 }
 #conf.hide{
+    position: absolute;
     opacity: 0;
     z-index: -20;
 }
@@ -594,13 +596,14 @@ body{
     top:80px;
     left:5px;
     width: 95%;
-    overflow-x: scroll;
 }
 #stng{
+    position: relative;
     background: linear-gradient(-250deg, #4fb8b8, #ffffff);
     border: none;
 }
 #data.hide{
+    position: absolute;
     opacity: 0;
     z-index: -20;
 }
@@ -644,6 +647,7 @@ body{
 }
 
 #return.hide{
+    position: absolute;
     opacity: 0;
 }
 #return.active{
