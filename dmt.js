@@ -73,7 +73,7 @@ function list() {
         for (let i = 0; i < ent.length; i++) {
             res = res + "<tr id='ls'>";
             //res = res + "<div id='bdr'>"
-            let cut = ent[i][0].substr(ent[i][0].indexOf('$@') + 2);
+            let cut = ent[i][0].substr(2*(ent[i][0].indexOf('$@')>=0));
             res = res + "<td>" + cut + "</td>"
             res = res + "<td>" + ent[i][1] + "</td>"
             res = res + "<td><input type='checkbox' id='chk" + i + "'"
