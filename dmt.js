@@ -129,7 +129,7 @@ function up(id){
         ent[id-1][i]=wk;
     }
     if(ent[0][0].indexOf("$@")>=0){
-        let cut = ent[0][0].substr(ent[0][0].indexOf('$@') + 1);
+        let cut = ent[0][0].substr(2*(ent[0][0].indexOf('$@')>=0));
         ent[0][0]=cut
     }
     if(ent[id][0].substr(0,2)!="$@"){
@@ -149,7 +149,7 @@ function down(id){
         ent[id+1][i]=wk;
     }
     if(ent[0][0].indexOf("$@")>=0){
-        let cut = ent[0][0].substr(ent[0][0].indexOf('$@') + 1);
+        let cut = ent[i][0].substr(2*(ent[i][0].indexOf('$@')>=0));
         ent[0][0]=cut
     }
     if(ent[id+1][0].substr(0,2)!="$@"){
@@ -211,7 +211,7 @@ function battle(){
     for(let i=0;i<ent.length;i++){
         //console.log(ent[i][2]);
         if(ent[i][2]=="t"){
-            table1.push([ent[i][0].substr(ent[i][0].indexOf('$@') + 1),ent[i][1]]);
+            table1.push([ent[i][0].substr(2*(ent[i][0].indexOf('$@')>=0)),ent[i][1]]);
         }
     }
     if(table1.length<2){
@@ -224,7 +224,7 @@ function battle(){
         //console.log(ent[i][2]);
         if(ent[i][2]=="t"){
             if(j!=res1){
-                table2.push([ent[i][0].substr(ent[i][0].indexOf('$@') + 1),ent[i][1]]);
+                table2.push([ent[i][0].substr(2*(ent[i][0].indexOf('$@')>=0)),ent[i][1]]);
             }
             j=j+1
         }
