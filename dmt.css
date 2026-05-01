@@ -680,19 +680,19 @@ body{
       }
     49%{
         font-size: clamp(65px,14vw,110px);
-        color: #303030;
+        color: #7a7a7a;
         text-shadow:2px 2px #2c9981;
         opacity: 1;
     }
     50%{
         font-size: clamp(120px,17vw,170px);
-        color: #000000;
+        color: #7a7a7a;
         text-shadow:2px 2px #2c9981;
         opacity: 1;
     }
     70%{
         font-size: clamp(120px,17vw,170px);
-        color: #000000;
+        color: #7a7a7a;
         text-shadow:2px 2px #2c9981;
         opacity: 1;
         top:50%;
