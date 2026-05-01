@@ -110,7 +110,7 @@ function del(id){
         return;
     }
     if(ent[0][0].indexOf("$@")>=0){
-        let cut = ent[0][0].substr(ent[0][0].indexOf('$@') + 1);
+        let cut = ent[0][0].substr(2*(ent[0][0].indexOf('$@')>=0));
         ent[0][0]=cut
     }
     
