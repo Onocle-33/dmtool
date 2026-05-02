@@ -199,7 +199,7 @@ body{
     height: 100vh;
 }
 #den.active{
-    position: fixed;
+    position: absolute;
     opacity: 0;
     top:0vh;
     left:0px;
