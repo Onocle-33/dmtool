@@ -13,6 +13,8 @@ body{
     position: fixed;
     z-index: 0;
     overflow-y: hidden;
+    top: 0;
+    left: 0;
 }
 #decks{
     position: relative;
