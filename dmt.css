@@ -1,6 +1,7 @@
 html{
     background: linear-gradient(-250deg, #bad0df, #ffffff);
     background-size: contain;
+    position: fixed;
     z-index: -30;
     width: 10000px;
     height: 10000px;
@@ -42,6 +43,7 @@ body{
     position: fixed;
     width:100vw;
     height: 100vh;
+    z-index: 10;
     opacity: 1;
     text-align: center;
 }
