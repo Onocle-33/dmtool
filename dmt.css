@@ -439,11 +439,11 @@ body{
 
         conic-gradient(
             from var(--angle),
-            #ffffff 0turn 0.05turn,
+            #fbfbfb 0turn 0.05turn,
             #4534ff 0.1turn 0.45turn,
-            #ffffff 0.5turn 0.55turn,
+            #fbfbfb 0.5turn 0.55turn,
             #ff2fc4 0.6turn 0.95turn,
-            #ffffff 1turn
+            #fbfbfb 1turn
         )
     ;
     background-clip:
@@ -478,7 +478,7 @@ body{
             from var(--angle),
             #fbfbfb 0turn 0.05turn,
             #4534ff 0.1turn 0.45turn,
-            #ffffff 0.5turn 0.55turn,
+            #fbfbfb 0.5turn 0.55turn,
             #ff2fc4 0.6turn 0.95turn,
             #fbfbfb 1turn
         )
@@ -812,24 +812,29 @@ body{
     }
     100%{
         color: #21f3f3;
+        text-shadow:2px 2px #000000;
         opacity: 1;
       }
 }
 @keyframes userLoop{
     0%{
          color: #21f3f3;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
     30%{
         color: #e2ffff;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
     80%{
         color: #21f3f3;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
     100%{
         color: #21f3f3;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
 }
@@ -849,24 +854,29 @@ body{
     }
     100%{
         color: #21f372;
+        text-shadow:2px 2px #000000;
         opacity: 1;
       }
 }
 @keyframes userLoop2{
     0%{
          color: #21f372;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
     30%{
         color: #e2ffff;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
     80%{
         color: #21f372;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
     100%{
         color: #21f372;
+        text-shadow:2px 2px #000000;
         opacity: 1;
     }
 }
