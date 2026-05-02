@@ -1,5 +1,5 @@
 html{
-    background: linear-gradient(-250deg, #bad0df, #ffffff);
+    background: linear-gradient(-250deg, #bad0df, #fbfbfb);
     background-size: contain;
     position: fixed;
     z-index: -30;
@@ -69,19 +69,19 @@ body{
     position: relative;
     border-collapse: collapse;
     border:2px solid #2a78ab;
-    background: linear-gradient(-250deg, #42cdaf, #ffffff);
+    background: linear-gradient(-250deg, #42cdaf, #fbfbfb);
 }
 #tb2{
     position: relative;
     z-index: 20;
     border:  2px solid #2a78ab;
-    background: linear-gradient(-250deg, #42cdaf, #ffffff);
+    background: linear-gradient(-250deg, #42cdaf, #fbfbfb);
 }
 #ls{
     position: relative;
     z-index: 20;
     border:  2px solid #2a78ab;
-    background: linear-gradient(-250deg, #badfc1, #ffffff);
+    background: linear-gradient(-250deg, #badfc1, #fbfbfb);
 }
 #list.hide{
     opacity: 0;
@@ -457,11 +457,11 @@ body{
 
         conic-gradient(
             from var(--angle),
-            #ffffff 0turn 0.05turn,
+            #fbfbfb 0turn 0.05turn,
             #4534ff 0.1turn 0.45turn,
             #ffffff 0.5turn 0.55turn,
             #ff2fc4 0.6turn 0.95turn,
-            #ffffff 1turn
+            #fbfbfb 1turn
         )
     ;
     background-clip:
@@ -615,7 +615,7 @@ body{
 }
 #stng{
     position: relative;
-    background: linear-gradient(-250deg, #4fb8b8, #ffffff);
+    background: linear-gradient(-250deg, #4fb8b8, #fbfbfb);
     border: none;
 }
 #data.hide{
@@ -675,7 +675,7 @@ body{
     opacity: 0;
     z-index: 999;
     align-content: center;
-    background: linear-gradient(-250deg, #838383, #ffffff);
+    background: linear-gradient(-250deg, #838383, #fbfbfb);
     animation:1s forwards button 1.5s ease
 }
 
@@ -734,7 +734,7 @@ body{
     100%{
         position: absolute;
         font-size: clamp(40px,12vw,60px);
-        color: #ffffff;
+        color: #fbfbfb;
         text-shadow:2px 2px #2c9981;
         filter: brightness(100%) invert(0%);
         opacity: 1;
@@ -747,7 +747,7 @@ body{
         opacity: 1;
     }
     1%{
-        color: #ffffff;
+        color: #fbfbfb;
         opacity: 1;
     }
     30%{
@@ -755,7 +755,7 @@ body{
         opacity: 1;
     }
     50%{
-        color: #ffffff;
+        color: #fbfbfb;
         opacity: 1;
     }
     80%{
@@ -763,7 +763,7 @@ body{
         opacity: 1;
     }
     99%{
-        color: #ffffff;
+        color: #fbfbfb;
         opacity: 1;
     }
 }
@@ -788,7 +788,7 @@ body{
         background-color: none;
     }
     51%{
-        color: #ffffff;
+        color: #fbfbfb;
         opacity: 1;
     }
     100%{
@@ -825,7 +825,7 @@ body{
         background-color: none;
     }
     51%{
-        color: #ffffff;
+        color: #fbfbfb;
         opacity: 1;
     }
     100%{
