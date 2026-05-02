@@ -294,7 +294,7 @@ function onePick(){
     for(let i=0;i<ent.length;i++){
         //console.log(ent[i][2]);
         if(ent[i][2]=="t"){
-            table1.push([ent[i][0].substr(ent[i][0].indexOf('$@') + 1),ent[i][1]]);
+            table1.push([ ent[i][0].substr(2*(ent[i][0].indexOf('$@')>=0)),ent[i][1]]);
         }
     }
     if(table1.length<2){
