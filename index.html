@@ -21,7 +21,8 @@
         <div>プレイヤー1</div><input type="text" id="pl1"><br>
         <div>プレイヤー2</div><input type="text" id="pl2"><br>
         <input type="button" id = "gt" value="対戦開始" onclick=battle()><br>
-        <input type="button" id = "op" value="ソロ抽選" onclick=onePick()>
+        <input type="button" id = "op" value="ソロ抽選" onclick=onePick()><br>
+        <input type="button" id = "sk" value="先攻/後攻抽選" onclick=sFirst()>
       </form>
       <div id="tabs">
         <div id="tab1" onclick=chg(0) class="on">デッキ<br>リスト</div>
@@ -85,13 +86,14 @@
         <img src="img/haikei2.gif" id="den" class="hide">
       </div>
       <div id="card" class="hide">
-        <div id="boxs" class="hide"><span id="box1" class="hide"></span><span id="box2" class="hide"></span></div>
+        <div id="boxs" class="hide"><span id="box1" class="hide"><span id="first1" class="hide"></span></span><span id="box2" class="hide"><span id="first2" class="hide"></span></span></div>
         <div id="user" class="hide"><span id="u1">user1</span><span id="u2">user2</span></div>
         <div id="deck" class="hide"><span id="d1" class="hide">deck1</span><span id="d2" class="hide"></span></div>
         <div id="cr" class="hide"><span id="c1" class="hide">bd1</span><span id="c2" class="hide">bd2</span></div>
         <div id="vss" class="hide"><div id="vs" class="hide"> - VS - </div></div>
       </div>
       <div id="return" class="hide" onclick=reset()>return</div>
+      <div id="first" class="hide" onclick=first()>先攻/後攻</div>
     </div>
   </body>
 </html>
