@@ -258,6 +258,7 @@ function battle(){
     document.getElementById("box1").className="active"
     document.getElementById("box2").className="active"
     document.getElementById("return").className="active"
+    document.getElementById("first").className="active"
     se()
     return
 }
@@ -322,7 +323,12 @@ function reset(){
     document.getElementById("box1").className="hide"
     document.getElementById("box2").className="hide"
     document.getElementById("return").className="hide"
+    document.getElementById("first").className="hide"
+    document.getElementById("first1").className="hide"
+    document.getElementById("first2").className="hide"
 
+    document.getElementById("first1").innerText="";
+    document.getElementById("first2").innerText="";
 }
 
 function inports(){
@@ -374,4 +380,29 @@ function loading(){
         count=0;
     }
     document.getElementById("ld2").innerText="Now Loading" + dot
+}
+
+function first(){
+    let res=Math.round(Math.random());
+    let res1="先攻"
+    let res2="後攻"
+    if(res==1){
+        res1="後攻"
+        res2="先攻"
+    }
+    document.getElementById("first1").innerText=res1;
+    document.getElementById("first2").innerText=res2;
+    document.getElementById("first1").className="active"
+    document.getElementById("first2").className="active"
+    document.getElementById("first").className="hide"
+
+}
+
+function sFirst(){
+    let res=Math.round(Math.random());
+    let res2=document.getElementById("pl1").value
+    if(res==1){
+        res2=document.getElementById("pl2").value
+    }
+    alert(res2 + "の先攻")
 }
