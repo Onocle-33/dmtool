@@ -1,5 +1,7 @@
-import { initializeApp } from './dmt.js';
-import { getAnalytics } from './dmt.js';
+'use strict';
+
+var app$1 = require('firebase/app');
+var analytics = require('firebase/analytics');
 
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
@@ -18,8 +20,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+const app = app$1.initializeApp(firebaseConfig);
+analytics.getAnalytics(app);
 const snd = new Audio("sound/剣で斬る6.mp3");
 const snd2 = new Audio("sound/重力魔法1.mp3");
 const snd3 = new Audio("sound/魔法陣を展開.mp3");
