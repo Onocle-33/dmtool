@@ -6,6 +6,7 @@ export default {
   output: {
     file: 'bundle.js',
     format: 'iife',
+    name: 'dmt', // グローバル変数名
     globals: {
       'dmt.js':'dmt',
       'firebase/app': 'app$1',      // ← 左辺にパッケージ名、右辺に guessing 名
