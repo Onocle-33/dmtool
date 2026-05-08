@@ -399,3 +399,5 @@ function sFirst(){
 }
 
 export default { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};
+
+return dmt;
