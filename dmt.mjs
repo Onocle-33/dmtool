@@ -389,8 +389,8 @@ function exp(){
 }
 function copy(){
     document.getElementById("pass").select();                              // コピーしたい要素を選択状態にする
-	document.execCommand("Copy");                     // 選択しているテキストをクリップボードにコピーする
-	alert("コピーしました");  
+    document.execCommand("Copy");                     // 選択しているテキストをクリップボードにコピーする
+    alert("コピーしました");  
 }
 function crs(){
     document.getElementById("pass").value="";    
