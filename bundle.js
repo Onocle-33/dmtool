@@ -22,3 +22,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = app$1.initializeApp(firebaseConfig);
 analytics.getAnalytics(app);
+const snd = new Audio("sound/剣で斬る6.mp3");
+const snd2 = new Audio("sound/重力魔法1.mp3");
+const snd3 = new Audio("sound/魔法陣を展開.mp3");
+snd.preload="auto";
+snd2.preload="auto";
+snd3.preload="auto";
