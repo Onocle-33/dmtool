@@ -27,4 +27,4 @@
   snd2.preload="auto";
   snd3.preload="auto";
 
-})(app$1, analytics);
+});
