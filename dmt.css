@@ -17,6 +17,9 @@ body{
     top: 0;
     left: 0;
 }
+#hd{
+    position: fixed;
+}
 #decks{
     position: relative;
     opacity: 1;
