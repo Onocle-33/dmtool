@@ -37,6 +37,7 @@ function soundLoad(){
 
 window.onload= volume(),volume2()
 document.getElementById("ent").addEventListener("click",entry())
+document.getElementById("se").addEventListener("click",se())
 function entry(){
     let decks1=document.getElementById("decks").value
     let names1=document.getElementById("names").value
