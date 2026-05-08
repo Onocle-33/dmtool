@@ -433,5 +433,3 @@ function sFirst(){
     alert(res2 + "の先攻")
 }
 
-
-module.exports = { list,entry,up,down,del,chg,volume,volume2,reset,battle,inports,exp,crs,first,sFirst };
