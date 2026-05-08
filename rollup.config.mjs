@@ -2,6 +2,7 @@
 
 export default {
   input: 'dmt.js',
+  external: ['vue', 'jquery'], // 外部モジュールとして扱う
   output: {
     file: 'bundle.js',
     format: 'iife',
