@@ -46,9 +46,6 @@ function soundLoad(){
     return
 }
 
-window.onload= volume(),volume2()
-document.getElementById("ent").onclick=entry();
-document.getElementById("se").onclick=se();
 function entry(){
     let decks1=document.getElementById("decks").value
     let names1=document.getElementById("names").value
@@ -432,4 +429,7 @@ function sFirst(){
     alert(res2 + "の先攻")
 }
 
+window.onload= volume(),volume2()
+document.getElementById("ent").onclick=entry();
+document.getElementById("se").onclick=se();
 export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};

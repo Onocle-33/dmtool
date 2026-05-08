@@ -29,9 +29,6 @@ var dmt = (function (exports, app$1, analytics) {
   snd2.preload="auto";
   snd3.preload="auto";
 
-  window.onload= volume(),volume2();
-  document.getElementById("ent").onclick=entry();
-  document.getElementById("se").onclick=se();
   function entry(){
       let decks1=document.getElementById("decks").value;
       let names1=document.getElementById("names").value;
@@ -386,6 +383,10 @@ var dmt = (function (exports, app$1, analytics) {
       alert(res2 + "の先攻");
   }
 
+  window.onload= volume(),volume2();
+  document.getElementById("ent").onclick=entry();
+  document.getElementById("se").onclick=se();
+
   exports.battle = battle;
   exports.chg = chg;
   exports.chk = chk;
@@ -408,4 +409,4 @@ var dmt = (function (exports, app$1, analytics) {
 
   return exports;
 
-});
+})({}, app$1, analytics);
