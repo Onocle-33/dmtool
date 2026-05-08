@@ -4,6 +4,6 @@ export default {
   input: 'dmt.js',
   output: {
     file: 'bundle.js',
-    format: 'em',
+    format: 'es',
   }
 };
