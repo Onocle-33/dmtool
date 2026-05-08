@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import{ list,entry,up,down,del,chg,volume,volume2,reset,battle,inports,exp,crs,first,sFirst } from "./bundle.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -433,5 +434,3 @@ function sFirst(){
     alert(res2 + "の先攻")
 }
 
-
-module.exports = { list,entry,up,down,del,chg,volume,volume2,reset,battle,inports,exp,crs,first,sFirst };
