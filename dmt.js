@@ -46,7 +46,7 @@ function soundLoad(){
     return
 }
 
-function entry(){
+var entry=function(){
     let decks1=document.getElementById("decks").value
     let names1=document.getElementById("names").value
     if(ent.length>=1){
@@ -121,7 +121,7 @@ function list() {
 
 
 
-function del(id){
+var del=function(id){
     let res=window.confirm("削除しますか？\nこの操作は取り消せません。")
     if(!res){
         return;
@@ -140,7 +140,7 @@ function del(id){
     return;
 }
 
-function up(id){
+var up=function(id){
     if(id<=0){
         return;
     }
@@ -160,7 +160,7 @@ function up(id){
     list();
     return;
 }
-function down(id){
+var down=function(id){
     if(id>=ent.length){
         return;
     }
@@ -428,8 +428,6 @@ function sFirst(){
     }
     alert(res2 + "の先攻")
 }
-
-window.onload= function(){volume();volume2()}
-document.getElementById("ent").onclick=function() {entry()};
-document.getElementById("se").onclick=function(){se()};
+window.onload=function(){volume();volume2();}
+document.getElementById("ent").addEventListener("click",entry())
 export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};

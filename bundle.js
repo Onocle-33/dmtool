@@ -29,7 +29,7 @@ var dmt = (function (exports, app$1, analytics) {
   snd2.preload="auto";
   snd3.preload="auto";
 
-  function entry(){
+  var entry=function(){
       let decks1=document.getElementById("decks").value;
       let names1=document.getElementById("names").value;
       if(ent.length>=1){
@@ -41,7 +41,7 @@ var dmt = (function (exports, app$1, analytics) {
       //console.log(ent)
       list();
       return;
-  }
+  };
 
 
 
@@ -88,7 +88,7 @@ var dmt = (function (exports, app$1, analytics) {
 
 
 
-  function del(id){
+  var del=function(id){
       let res=window.confirm("削除しますか？\nこの操作は取り消せません。");
       if(!res){
           return;
@@ -105,9 +105,9 @@ var dmt = (function (exports, app$1, analytics) {
       
       list();
       return;
-  }
+  };
 
-  function up(id){
+  var up=function(id){
       if(id<=0){
           return;
       }
@@ -126,8 +126,8 @@ var dmt = (function (exports, app$1, analytics) {
       }
       list();
       return;
-  }
-  function down(id){
+  };
+  var down=function(id){
       if(id>=ent.length){
           return;
       }
@@ -146,7 +146,7 @@ var dmt = (function (exports, app$1, analytics) {
       }
       list();
       return;
-  }
+  };
 
   function chk(){
       for(let i=0;i<ent.length;i++){
@@ -382,10 +382,8 @@ var dmt = (function (exports, app$1, analytics) {
       }
       alert(res2 + "の先攻");
   }
-
-  window.onload= function(){volume();volume2();};
-  document.getElementById("ent").onclick=function() {entry();};
-  document.getElementById("se").onclick=function(){se();};
+  window.onload=function(){volume();volume2();};
+  document.getElementById("ent").addEventListener("click",entry());
 
   exports.battle = battle;
   exports.chg = chg;
