@@ -21,6 +21,13 @@ var dmt = (function (exports, app$1, analytics) {
   // Initialize Firebase
   const app = app$1.initializeApp(firebaseConfig);
   analytics.getAnalytics(app);
+  const ent=[];
+  const snd = new Audio("sound/剣で斬る6.mp3");
+  const snd2 = new Audio("sound/重力魔法1.mp3");
+  const snd3 = new Audio("sound/魔法陣を展開.mp3");
+  snd.preload="auto";
+  snd2.preload="auto";
+  snd3.preload="auto";
 
   window.onload= volume(),volume2();
   document.getElementById("ent").addEventListener("click",entry());
@@ -401,4 +408,4 @@ var dmt = (function (exports, app$1, analytics) {
 
   return exports;
 
-});
+})({}, app$1, analytics);

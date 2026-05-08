@@ -20,7 +20,18 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
+const ent=[];
+const chkEnt=[];
+var mode=0;
+const pointData=[];
+const rankData=[];
+const snd = new Audio("sound/剣で斬る6.mp3");
+const snd2 = new Audio("sound/重力魔法1.mp3");
+const snd3 = new Audio("sound/魔法陣を展開.mp3");
+snd.preload="auto"
+snd2.preload="auto"
+snd3.preload="auto"
+var count = 0;
 //setInterval(loading, 1000);
 function soundLoad(){
     snd.loop=false
