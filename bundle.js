@@ -1,5 +1,4 @@
 'use strict';
-import{ list,entry,up,down,del,chg,volume,volume2,reset,battle,inports,exp,crs,first,sFirst } from "./dmt.mjs";
 var app$1 = require('firebase/app');
 var analytics = require('firebase/analytics');
 
