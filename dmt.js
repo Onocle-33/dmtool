@@ -35,6 +35,8 @@ function soundLoad(){
     return
 }
 
+window.onload= volume(),volume2()
+
 function entry(){
     let decks1=document.getElementById("decks").value
     let names1=document.getElementById("names").value

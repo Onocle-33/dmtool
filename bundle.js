@@ -22,6 +22,8 @@ var dmt = (function (exports, app$1, analytics) {
   const app = app$1.initializeApp(firebaseConfig);
   analytics.getAnalytics(app);
 
+  window.onload= volume(),volume2();
+
   function entry(){
       let decks1=document.getElementById("decks").value;
       let names1=document.getElementById("names").value;
