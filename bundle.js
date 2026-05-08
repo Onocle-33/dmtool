@@ -398,4 +398,4 @@ var dmt = (function (exports, app$1, analytics) {
 
   return exports;
 
-})({}, app$1, analytics);
+});
