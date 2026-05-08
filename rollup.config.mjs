@@ -7,7 +7,7 @@ export default {
     file: 'bundle.js',
     format: 'iife',
     globals: {
-      './dmt.js':'dmt',
+      'dmt.js':'dmt',
       'firebase/app': 'app$1',      // ← 左辺にパッケージ名、右辺に guessing 名
       'firebase/analytics': 'analytics',
       vue: 'Vue',         // import Vue from 'vue' -> window.Vue
