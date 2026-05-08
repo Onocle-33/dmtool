@@ -1,4 +1,4 @@
-import * as dmt from '/dmt.js';
+import * as dmt from 'dmt.js';
 (function (app$1, analytics) {
   'use strict';
 
