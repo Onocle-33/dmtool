@@ -428,6 +428,6 @@ function sFirst(){
     }
     alert(res2 + "の先攻")
 }
-window.onload=function(){volume();volume2();}
-document.getElementById("ent").addEventListener("click",entry())
+window.onload=function(){volume;volume2;}
+document.getElementById("ent").onclick=entry()
 export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};
