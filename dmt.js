@@ -397,3 +397,5 @@ function sFirst(){
     }
     alert(res2 + "の先攻")
 }
+
+export default { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};
