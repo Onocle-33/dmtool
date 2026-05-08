@@ -4,6 +4,5 @@ export default {
   output: {
     file: 'bundle.js',
     format: 'cjs',
-    target: 'node', // Node.js向けの場合
   },
 };
