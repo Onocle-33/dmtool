@@ -1,5 +1,3 @@
-import {dmt} from "./dmt.js"
-
 (function (app$1, analytics) {
   'use strict';
 
@@ -29,4 +27,4 @@ import {dmt} from "./dmt.js"
   snd2.preload="auto";
   snd3.preload="auto";
 
-});
+})(app$1, analytics);

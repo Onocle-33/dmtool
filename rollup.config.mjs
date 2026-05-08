@@ -7,6 +7,7 @@ export default {
     file: 'bundle.js',
     format: 'iife',
     globals: {
+      dmtool:'app$1',
       vue: 'Vue',         // import Vue from 'vue' -> window.Vue
       jquery: '$'        // import $ from 'jquery' -> window.$
     }
