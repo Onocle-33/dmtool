@@ -46,7 +46,7 @@ function soundLoad(){
     return
 }
 
-var entry=function(){
+function entry(){
     let decks1=document.getElementById("decks").value
     let names1=document.getElementById("names").value
     if(ent.length>=1){
