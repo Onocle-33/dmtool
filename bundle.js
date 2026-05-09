@@ -29,7 +29,7 @@ var dmt = (function (exports, app$1, analytics) {
   snd2.preload="auto";
   snd3.preload="auto";
 
-  var entry=function(){
+  function entry(){
       let decks1=document.getElementById("decks").value;
       let names1=document.getElementById("names").value;
       if(ent.length>=1){
@@ -41,7 +41,7 @@ var dmt = (function (exports, app$1, analytics) {
       //console.log(ent)
       list();
       return;
-  };
+  }
 
 
 
