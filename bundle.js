@@ -383,7 +383,8 @@ var dmt = (function (exports, app$1, analytics) {
       alert(res2 + "の先攻");
   }
   window.onload=function(){};
-  document.getElementById("ent").onclick=entry;
+  const bEnt = document.getElementById('ent');
+  bEnt.addEventListener('click', entry); // () はつけないのがポイント
 
   exports.battle = battle;
   exports.chg = chg;
