@@ -4601,7 +4601,7 @@ var dmt = (function (exports) {
 
 
 
-    var del=function(id){
+    function del(id){
         let res=window.confirm("削除しますか？\nこの操作は取り消せません。");
         if(!res){
             return;
@@ -4618,9 +4618,9 @@ var dmt = (function (exports) {
         
         list();
         return;
-    };
+    }
 
-    var up=function(id){
+    function up(id){
         if(id<=0){
             return;
         }
@@ -4639,8 +4639,8 @@ var dmt = (function (exports) {
         }
         list();
         return;
-    };
-    var down=function(id){
+    }
+    function down(id){
         if(id>=ent.length){
             return;
         }
@@ -4659,7 +4659,7 @@ var dmt = (function (exports) {
         }
         list();
         return;
-    };
+    }
 
     function chk(){
         for(let i=0;i<ent.length;i++){

@@ -121,7 +121,7 @@ function list() {
 
 
 
-var del=function(id){
+function del(id){
     let res=window.confirm("削除しますか？\nこの操作は取り消せません。")
     if(!res){
         return;
@@ -140,7 +140,7 @@ var del=function(id){
     return;
 }
 
-var up=function(id){
+function up(id){
     if(id<=0){
         return;
     }
@@ -160,7 +160,7 @@ var up=function(id){
     list();
     return;
 }
-var down=function(id){
+function down(id){
     if(id>=ent.length){
         return;
     }
