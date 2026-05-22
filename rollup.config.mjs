@@ -1,19 +1,17 @@
-// rollup.config.js
+// rollup.config.mjs
+import { nodeResolve } from '@rollup/plugin-node-resolve'; // ← 1. プラグインをインポート
 
 export default {
   input: 'dmt.js',
-  external: ['vue', 'jquery', 'firebase/app','firebase/analytics','firebase/firestore','dmt'], // 外部モジュールとして扱う
+  // external は空（または使い道がないなら丸ごと削除）にします
+  external: [], 
   output: {
     file: 'bundle.js',
     format: 'iife',
-    name: 'dmt', // グローバル変数名
-    globals: {
-      'dmt.js':'dmt',
-      'firebase/app': 'app$1',      // ← 左辺にパッケージ名、右辺に guessing 名
-      'firebase/analytics': 'analytics',
-      'firebase/firestore':'firestore',
-      vue: 'Vue',         // import Vue from 'vue' -> window.Vue
-      jquery: '$'        // import $ from 'jquery' -> window.$
-    }
-  }
+    name: 'dmt',
+    globals: {} // グローバル指定も空にします
+  },
+  plugins: [
+    nodeResolve() // ← 2. ここでプラグインを発動させる
+  ]
 };
