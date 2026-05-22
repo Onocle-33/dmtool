@@ -179,8 +179,12 @@ var dmt = (function (exports, app$1, analytics) {
       return
   }
   function volume(){
+      if (!volInput) return; // 音量バーがなければスキップ
       for(let i=1;i<=4;i++){
-          document.getElementById("msc" + i).volume=document.getElementById("vol").value;
+          const msc = document.getElementById("msc" + i);
+          if (msc) { // 要素がちゃんと存在するときだけ音量を設定する
+              msc.volume = volInput.value;
+          }
       }
   }
   function volume2(){
@@ -409,4 +413,4 @@ var dmt = (function (exports, app$1, analytics) {
 
   return exports;
 
-});
+})({}, app$1, analytics);

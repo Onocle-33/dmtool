@@ -212,8 +212,12 @@ function chg(r){
     return
 }
 function volume(){
+    if (!volInput) return; // 音量バーがなければスキップ
     for(let i=1;i<=4;i++){
-        document.getElementById("msc" + i).volume=document.getElementById("vol").value
+        const msc = document.getElementById("msc" + i);
+        if (msc) { // 要素がちゃんと存在するときだけ音量を設定する
+            msc.volume = volInput.value;
+        }
     }
 }
 function volume2(){
@@ -433,3 +437,16 @@ bVol.addEventListener('load', {volume,volume2}); // () はつけないのがポ�
 const bEnt = document.getElementById('ent');
 bEnt.addEventListener('click', entry); // () はつけないのがポイント
 export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};
+
+// 関数のグローバル公開（HTMLのonclickと繋ぐため）
+window.battle = battle;
+window.onePick = onePick;
+window.sFirst = sFirst;
+window.chg = chg;
+window.se = se;
+window.volume = volume;
+window.volume2 = volume2;
+window.copy = copy;
+window.crs = crs;
+window.inports = inports;
+window.exp = exp;
