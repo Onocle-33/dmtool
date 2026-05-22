@@ -433,15 +433,3 @@ bVol.addEventListener('load', {volume,volume2}); // () はつけないのがポ�
 const bEnt = document.getElementById('ent');
 bEnt.addEventListener('click', entry); // () はつけないのがポイント
 export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};
-// dmt.js の末尾（または window.onload の中）に追記
-window.battle = battle;
-window.onePick = onePick;
-window.sFirst = sFirst;
-window.chg = chg;
-window.se = se;
-window.volume = volume;
-window.volume2 = volume2;
-window.copy = copy;
-window.crs = crs;
-window.inports = inports;
-window.exp = exp;
