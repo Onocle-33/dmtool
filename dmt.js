@@ -451,3 +451,6 @@ window.crs = crs;
 window.inports = inports;
 window.exp = exp;
 window.reset = reset;
+window.reset = up;
+window.reset = down;
+window.reset = del;
