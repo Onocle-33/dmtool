@@ -171,7 +171,7 @@ var down=function(id){
         ent[id+1][i]=wk;
     }
     if(ent[0][0].indexOf("$@")>=0){
-        let cut = ent[i][0].substr(2*(ent[i][0].indexOf('$@')>=0));
+        let cut = ent[0][0].substr(2*(ent[0][0].indexOf('$@')>=0));
         ent[0][0]=cut
     }
     if(ent[id+1][0].substr(0,2)!="$@"){
