@@ -382,7 +382,8 @@ var dmt = (function (exports, app$1, analytics) {
       }
       alert(res2 + "の先攻");
   }
-  window.onload=function(){};
+  const bVol = document.getElementById('ld');
+  bVol.addEventListener('load', {volume,volume2}); // () はつけないのがポイント
   const bEnt = document.getElementById('ent');
   bEnt.addEventListener('click', entry); // () はつけないのがポイント
   // dmt.js の末尾（または window.onload の中）に追記
@@ -420,4 +421,4 @@ var dmt = (function (exports, app$1, analytics) {
 
   return exports;
 
-});
+})({}, app$1, analytics);

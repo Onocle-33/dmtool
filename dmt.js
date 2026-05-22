@@ -428,7 +428,8 @@ function sFirst(){
     }
     alert(res2 + "の先攻")
 }
-window.onload=function(){volume;volume2;}
+const bVol = document.getElementById('ld');
+bVol.addEventListener('load', {volume,volume2}); // () はつけないのがポイント
 const bEnt = document.getElementById('ent');
 bEnt.addEventListener('click', entry); // () はつけないのがポイント
 export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};
