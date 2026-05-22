@@ -4900,16 +4900,13 @@ var dmt = (function (exports) {
         alert(res2 + "の先攻");
     }
 
-    const bFirst = document.getElementById('first1');
-    bFirst.addEventListener('click' , first);
-    const bVol = document.getElementById('ld');
-    bVol.addEventListener('load', {volume,volume2}); // () はつけないのがポイント
     const bEnt = document.getElementById('ent');
     bEnt.addEventListener('click', entry); // () はつけないのがポイント
 
     // 関数のグローバル公開（HTMLのonclickと繋ぐため）
     window.battle = battle;
     window.onePick = onePick;
+    window.first = first;
     window.sFirst = sFirst;
     window.chg = chg;
     window.se = se;
@@ -4919,6 +4916,7 @@ var dmt = (function (exports) {
     window.crs = crs;
     window.inports = inports;
     window.exp = exp;
+    window.reset = reset;
 
     exports.battle = battle;
     exports.chg = chg;

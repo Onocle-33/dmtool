@@ -433,10 +433,6 @@ function sFirst(){
     alert(res2 + "の先攻")
 }
 
-const bFirst = document.getElementById('first1');
-bFirst.addEventListener('click' , first);
-const bVol = document.getElementById('ld');
-bVol.addEventListener('load', {volume,volume2}); // () はつけないのがポイント
 const bEnt = document.getElementById('ent');
 bEnt.addEventListener('click', entry); // () はつけないのがポイント
 export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,inports,exp,copy,crs,first,sFirst};
@@ -444,6 +440,7 @@ export { list,entry,del,up,down,chk,chg,volume,volume2,battle,se,onePick,reset,i
 // 関数のグローバル公開（HTMLのonclickと繋ぐため）
 window.battle = battle;
 window.onePick = onePick;
+window.first = first;
 window.sFirst = sFirst;
 window.chg = chg;
 window.se = se;
@@ -453,3 +450,4 @@ window.copy = copy;
 window.crs = crs;
 window.inports = inports;
 window.exp = exp;
+window.reset = reset;
