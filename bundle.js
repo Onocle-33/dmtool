@@ -385,6 +385,18 @@ var dmt = (function (exports, app$1, analytics) {
   window.onload=function(){};
   const bEnt = document.getElementById('ent');
   bEnt.addEventListener('click', entry); // () はつけないのがポイント
+  // dmt.js の末尾（または window.onload の中）に追記
+  window.battle = battle;
+  window.onePick = onePick;
+  window.sFirst = sFirst;
+  window.chg = chg;
+  window.se = se;
+  window.volume = volume;
+  window.volume2 = volume2;
+  window.copy = copy;
+  window.crs = crs;
+  window.inports = inports;
+  window.exp = exp;
 
   exports.battle = battle;
   exports.chg = chg;
@@ -408,4 +420,4 @@ var dmt = (function (exports, app$1, analytics) {
 
   return exports;
 
-});
+})();
