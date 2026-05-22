@@ -196,7 +196,7 @@ body{
     height: 25vh;
     left:50vw;
     top: 50vh;
-    transform: translateY(-50%),translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
     top: 25vh;
     opacity: 0;
     z-index: 3;
@@ -209,7 +209,7 @@ body{
     height: clamp(250px,32vh,360px);
     left:0vw;
     top: 25%;
-    transform: translateY(-50%),translateZ(1px);
+    transform: translateY(-50%) translateZ(1px);
     opacity: 1;
     background-image: linear-gradient(to right, rgb(9, 9, 92), rgb(18, 18, 18), rgb(91, 4, 57));
     z-index: 3;
