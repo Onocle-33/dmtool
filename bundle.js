@@ -4899,6 +4899,9 @@ var dmt = (function (exports) {
         }
         alert(res2 + "の先攻");
     }
+
+    const bFirst = document.getElementById('first1');
+    bFirst.addEventListener('click' , first);
     const bVol = document.getElementById('ld');
     bVol.addEventListener('load', {volume,volume2}); // () はつけないのがポイント
     const bEnt = document.getElementById('ent');
