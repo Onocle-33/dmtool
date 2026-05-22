@@ -199,7 +199,7 @@ function chg(r){
     pages.push(["tab3","music"])
     pages.push(["tab4","data"])
     document.getElementById("sel").scrollTo(0,0)
-    for(i=0;i<pages.length;i++){
+    for(let i=0;i<pages.length;i++){
         let res1 = "off"
         let res2 = "hide"
         if(i==r){
