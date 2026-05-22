@@ -4917,9 +4917,9 @@ var dmt = (function (exports) {
     window.inports = inports;
     window.exp = exp;
     window.reset = reset;
-    window.reset = up;
-    window.reset = down;
-    window.reset = del;
+    window.up = up;
+    window.down = down;
+    window.del = del;
 
     exports.battle = battle;
     exports.chg = chg;
