@@ -208,7 +208,7 @@ body{
     width: 100vw;
     height: clamp(250px,32vh,360px);
     left:0vw;
-    top: 25%;
+    top: 0px;
     transform: translateY(-50%) translateZ(1px);
     opacity: 1;
     background-image: linear-gradient(to right, rgb(9, 9, 92), rgb(18, 18, 18), rgb(91, 4, 57));
