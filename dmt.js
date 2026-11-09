@@ -195,7 +195,7 @@ function chk(){
 function chg(r){
     const pages=[]
     pages.push(["tab1","sc"])
-    pages.push(["tab2","conf"])
+    pages.push(["tab2","log"])
     pages.push(["tab3","music"])
     pages.push(["tab4","data"])
     document.getElementById("sel").scrollTo(0,0)

@@ -634,12 +634,12 @@ body{
     z-index: 30;
     border: 2px solid #2a78ab;
 }
-#conf.hide{
+#log.hide{
     position: absolute;
     opacity: 0;
     z-index: -20;
 }
-#conf.active{
+#log.active{
     position:absolute;
     opacity: 1;
     z-index: 20;
